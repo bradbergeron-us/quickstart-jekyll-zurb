@@ -1,2 +1,7 @@
-asset/css/app.css
-_site
+#
+# Directories
+#
+
+.sass-cache/
+_site/
+_vendor/

@@ -1,33 +1,23 @@
-#
-# Clean/Compile Life-cycle
-#
-
-all: clean compile
-
-
-clean:
-	make -C _layouts clean
-	rm -rf _site
+all: compile
 
 
 compile:
-	make -C _layouts
-	bundle exec jekyll --no-server --no-safe --no-auto
-	bundle exec compass compile -c compass.rb
+	bundle exec jekyll build
 
 
-runserver: clean compile
-	bundle exec foreman start
+distclean:
+	git clean -dfxq
 
-
-.PHONY: all clean compile runserver
-
-#
-# Developer Setup
-#
 
 setup:
-	sudo apt-get -y install python-pygments
+	npm install -g bower
+
+	bower install
 	bundle install
 
-.PHONY: setup
+
+server:
+	bundle exec jekyll serve --watch
+
+
+.PHONY: all compile distclean setup server

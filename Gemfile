@@ -1,10 +1,9 @@
 # -*- ruby -*-
 
-source :rubygems
+source 'https://rubygems.org'
 
-gem "foreman"
-gem "haml"
-gem "jekyll"
-gem "rb-inotify"
-gem "rdiscount"
-gem "zurb-foundation"
+gem 'jekyll', '~> 2.1.0'
+gem 'jekyll-mentions'
+gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'
+gem 'jemoji'
