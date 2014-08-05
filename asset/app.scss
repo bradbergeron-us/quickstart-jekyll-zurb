@@ -2,6 +2,18 @@
 ---
 
 //
+// ZURB Foundation Overrides
+//
+// See: _vendor/foundation/scss/foundation/_settings.scss
+//
+
+@import "foundation/settings";
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+$body-font-family: "Open Sans", sans-serif;
+
+//
 // ZURB Foundation
 //
 
