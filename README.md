@@ -6,7 +6,7 @@ site generator.
 Unlike other projects (such as Octopress), this is a minimal skeleton repository upon which you
 can build your project. You _have_ to understand all the moving parts and how they are configured.
 
-This project is meant to be deployed on GitHub Pages, no Grunt, Gulp involved (though you are free
+This project is meant to be deployed on GitHub Pages, no Grunt or Gulp involved (though you are free
 to use them).
 
 
