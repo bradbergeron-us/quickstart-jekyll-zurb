@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="{{ site.baseurl }}/asset/app.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/atom.xml" rel="alternate" title="Sitewide ATOM Feed" type="application/atom+xml">
+
         <meta charset="utf-8">
         <meta content="width=device-width" name="viewport">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
         {%if page.title %}
         <title>{{ page.title }} - {{ site.title }}</title>
         {% else %}
         <title>{{ site.title }}</title>
         {% endif %}
-
-        <link href="{{ site.baseurl }}/asset/app.css" rel="stylesheet">
-        <link href="{{ site.baseurl }}/atom.xml" rel="alternate" title="Sitewide ATOM Feed" type="application/atom+xml">
-
-        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
         <nav class="top-bar" data-topbar>
