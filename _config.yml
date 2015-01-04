@@ -2,17 +2,15 @@
 # Site settings
 #
 
-description: "Site description"
-title: "Site Title"
+description: Site description
+title: Site Title
 
 #
 # Author
 #
 
-author: "Site Author"
-email: "email@example.com"
-github_username:  "jekyll"
-twitter_username: "jekyllrb"
+author: Site Author
+email: email@example.com
 
 #
 # Build settings
