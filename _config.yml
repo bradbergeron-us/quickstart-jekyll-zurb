@@ -2,10 +2,8 @@
 # Site settings
 #
 
-baseurl: ""
 description: "Site description"
 title: "Site Title"
-url: "http://localhost:4000"
 
 #
 # Author
