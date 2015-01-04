@@ -26,11 +26,13 @@ gems:
     - jekyll-sitemap
     - jemoji
 exclude:
+    - _vendor
+    - bower.json
     - Gemfile
     - Gemfile.lock
     - Makefile
     - README.md
-    - bower.json
+    - vendor
 markdown: kramdown
 permalink: pretty
 safe: true
