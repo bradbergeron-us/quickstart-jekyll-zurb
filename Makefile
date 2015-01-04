@@ -9,10 +9,6 @@ compile:
 	bundle exec jekyll build
 
 
-distclean:
-	git clean -dfxq
-
-
 setup:
 	npm install -g bower
 
@@ -24,4 +20,4 @@ server:
 	bundle exec jekyll serve --watch
 
 
-.PHONY: all clean compile distclean setup server
+.PHONY: all clean compile setup server
