@@ -35,3 +35,13 @@ safe: true
 sass:
     sass_dir: _vendor/foundation/scss
     style: :compressed
+
+#
+# Defaults
+#
+
+defaults:
+  - scope:
+        path: ""
+    values:
+        layout: default
