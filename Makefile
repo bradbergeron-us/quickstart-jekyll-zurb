@@ -1,6 +1,10 @@
 all: compile
 
 
+clean:
+	rm -rf _site
+
+
 compile:
 	bundle exec jekyll build
 
@@ -20,4 +24,4 @@ server:
 	bundle exec jekyll serve --watch
 
 
-.PHONY: all compile distclean setup server
+.PHONY: all clean compile distclean setup server
