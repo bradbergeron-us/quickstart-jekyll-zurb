@@ -36,4 +36,4 @@ permalink: pretty
 safe: true
 sass:
     sass_dir: _vendor/foundation/scss
-    style: compressed
+    style: :compressed
