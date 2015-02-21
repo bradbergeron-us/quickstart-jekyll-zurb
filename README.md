@@ -48,6 +48,7 @@ At this point you can start the development server by running:
     ├── _site/         -- Output directory for generated content
     ├── _config.yml    -- Jekyll Configuration file
     ├── Gemfile        -- Ruby Bundler configuration file
+    ├── Guardfile      -- Guard configuration file (used to make LiveReload work)
     ├── bower.json     -- Bower dependencies
     ├── .bowerrc       -- Bower configuration file
     ├── Gemfile.lock   -- Ruby Bundler configuration file

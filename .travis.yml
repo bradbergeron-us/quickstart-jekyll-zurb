@@ -11,5 +11,6 @@ before_install:
     - npm install -g bower
     - bower install
 script:
-    - bundle exec jekyll build
-    - bundle exec htmlproof --href_ignore "#" ./_site
+    - echo "Build disabled for now"
+    # - make
+    # - bundle exec htmlproof --href_ignore "#" ./_site

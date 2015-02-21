@@ -23,19 +23,19 @@ gems:
     - jemoji
 exclude:
     - _vendor
+    - asset/app.scss
     - bower.json
+    - Brocfile.js
     - CHANGELOG.md
     - Gemfile
     - Gemfile.lock
     - Makefile
+    - node_modules
+    - package.json
     - README.md
-    - vendor
 markdown: kramdown
 permalink: pretty
 safe: true
-sass:
-    sass_dir: _vendor/foundation/scss
-    style: :compressed
 
 #
 # Defaults
