@@ -24,6 +24,7 @@ gems:
 exclude:
     - _vendor
     - bower.json
+    - CHANGELOG.md
     - Gemfile
     - Gemfile.lock
     - Makefile
