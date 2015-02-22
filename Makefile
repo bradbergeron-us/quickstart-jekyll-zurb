@@ -1,26 +1,20 @@
-all: jekyll sass
+all: clean
+	./node_modules/.bin/broccoli build _site
 
 
 clean:
-	rm -rf _site
-
-
-jekyll:
-	bundle exec jekyll build
-
-
-sass:
-	mkdir -p _site/asset
-	sassc -I _vendor/foundation/scss asset/app.scss _site/asset/app.css
+	rm -rf _site tmp
 
 
 setup:
-	bower install
 	bundle install
+	npm install
+
+	./node_modules/.bin/bower install
 
 
 server:
-	bundle exec foreman start
+	./node_modules/.bin/broccoli serve
 
 
 .PHONY: *

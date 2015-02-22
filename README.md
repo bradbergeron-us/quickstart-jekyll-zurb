@@ -11,19 +11,17 @@ site generator.
 Unlike other projects (such as Octopress), this is a minimal skeleton repository upon which you
 can build your project. You _have_ to understand all the moving parts and how they are configured.
 
-This project is meant to be deployed on GitHub Pages, no Grunt or Gulp involved (though you are free
-to use them).
-
 
 ## What's Inside
 
 - Jekyll 2
-- SASS 3
+- SASS 3 (through libSass for fast compile times)
 - ZURB Foundation 5 + Foundation JS plug-ins
 - Bare-bones page template
 - Sensible Jekyll defaults
 - Site-wide Atom feed for all blog posts
 - Integration with GitHub Pages Jekyll plug-ins
+- Broccoli-based compilation pipeline
 
 
 ## Getting Started
@@ -37,6 +35,12 @@ Clone this repository and perform the automated setup procedure:
 At this point you can start the development server by running:
 
     make server
+
+To build the site just launch:
+
+    make
+
+then copy the `_site` directory on your server to publish it.
 
 
 ## Directory & File Layout
