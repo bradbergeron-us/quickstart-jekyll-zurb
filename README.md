@@ -19,11 +19,11 @@ to use them).
 
 - Jekyll 2
 - SASS 3
-- ZURB Foundation 5 + Foundation JS plugins
-- Barebones page template
+- ZURB Foundation 5 + Foundation JS plug-ins
+- Bare-bones page template
 - Sensible Jekyll defaults
 - Site-wide Atom feed for all blog posts
-- Integration with GitHub Pages Jekyll plugins
+- Integration with GitHub Pages Jekyll plug-ins
 
 
 ## Getting Started
