@@ -23,7 +23,7 @@ to use them).
 - Barebones page template
 - Sensible Jekyll defaults
 - Site-wide Atom feed for all blog posts
-- Ingeration with GitHub Pages Jekyll plugins
+- Integration with GitHub Pages Jekyll plugins
 
 
 ## Getting Started
