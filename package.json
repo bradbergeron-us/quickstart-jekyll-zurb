@@ -10,7 +10,8 @@
     "broccoli-inject-livereload": "^0.1.1",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-sass": "^0.3.3",
-    "broccoli-static-compiler": "^0.2.1",
-    "exec-sync": "^0.1.6"
+    "broccoli-writer": "^0.1.1",
+    "exec-sync": "^0.1.6",
+    "promise-map-series": "^0.2.1"
   }
 }

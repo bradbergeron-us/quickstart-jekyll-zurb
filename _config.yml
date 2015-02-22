@@ -16,7 +16,6 @@ email: johndoe@example.com
 # Build settings
 #
 
-destination: ./_jekyll
 gems:
     - jekyll-mentions
     - jekyll-redirect-from
