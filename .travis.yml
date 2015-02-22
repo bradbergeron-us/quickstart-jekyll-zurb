@@ -8,9 +8,7 @@ rvm:
     - 2.1
     - 2.2
 before_install:
-    - npm install -g bower
-    - bower install
+    - make setup
 script:
-    - echo "Build disabled for now"
-    # - make
-    # - bundle exec htmlproof --href_ignore "#" ./_site
+    - make
+    - bundle exec htmlproof --href_ignore "#" ./_site
