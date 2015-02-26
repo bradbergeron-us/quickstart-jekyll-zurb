@@ -1,6 +1,8 @@
+var autoprefixer = require('broccoli-autoprefixer');
 var broccoli = require('broccoli');
 var compileSass = require('broccoli-sass');
 var execSync = require('exec-sync');
+var fs = require('fs');
 var injectLivereload = require('broccoli-inject-livereload');
 var mapSeries = require('promise-map-series');
 var mergeTrees = require('broccoli-merge-trees');
@@ -13,10 +15,25 @@ var Writer = require('broccoli-writer');
 Jekyll.prototype = Object.create(Writer.prototype);
 Jekyll.prototype.constructor = Jekyll;
 
-function Jekyll(trees) {
-    if (!(this instanceof Jekyll)) return new Jekyll(trees);
+function Jekyll() {
+    var filteredTrees = fs.readdirSync('.').filter(function filter(element) {
+        return element !== '_config.yml' &&
+            element !== '_site' &&
+            element !== 'Brocfile.js' &&
+            element !== 'CNAME' &&
+            element !== 'Gemfile' &&
+            element !== 'Gemfile.lock' &&
+            element !== 'Makefile' &&
+            element !== 'node_modules' &&
+            element !== 'package.json' &&
+            element !== 'README.md' &&
+            element !== 'tmp' &&
+            element[0] !== '.';
+    });
 
-    this.inputTrees = trees;
+    if (!(this instanceof Jekyll)) return new Jekyll(filteredTrees);
+
+    this.inputTrees = filteredTrees;
     this.description = 'Jekyll';
 }
 
@@ -32,7 +49,7 @@ Jekyll.prototype.write = function(readTree, destDir) {
 // Build
 //
 
-var scss = compileSass(['asset', '_vendor/foundation/scss'], 'app.scss', 'asset/app.css');
-var site = Jekyll(['_layouts', '_posts', 'atom.xml', 'index.html']);
+var scss = autoprefixer(compileSass(['asset', '_vendor/foundation/scss'], 'app.scss', 'asset/app.css'));
+var site = injectLivereload(Jekyll());
 
-module.exports = injectLivereload(mergeTrees([site, scss]));
+module.exports = mergeTrees([site, scss]);
