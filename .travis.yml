@@ -11,4 +11,4 @@ before_install:
     - make setup
 script:
     - make
-    - bundle exec htmlproof --href_ignore "#" ./_site
+    - bundle exec htmlproof --href-ignore "#" ./_site
