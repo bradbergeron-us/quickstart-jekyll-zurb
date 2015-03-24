@@ -22,6 +22,7 @@ gems:
     - jekyll-sitemap
     - jemoji
 exclude:
+    - _vendor
     - bower.json
     - Brocfile.js
     - CHANGELOG.md
@@ -34,6 +35,7 @@ exclude:
     - package.json
     - README.md
     - tmp
+    - vendor
 markdown: kramdown
 permalink: pretty
 safe: true
